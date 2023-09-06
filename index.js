@@ -106,14 +106,14 @@ class Quiz {
     questionTitle.innerHTML = `<h2>${
       this.questions[this.currentQuestionIndex].question
     }</h2> 
-        <div id="answer-buttons">${this.questions[
-          this.currentQuestionIndex
-        ].answers
-          .map(
-            (answer) =>
-              `<button class="button">${answer.text}</button> </div>`
-          )
-          .join("")}`;
+      <div id="answer-buttons">${this.questions[
+        this.currentQuestionIndex
+      ].answers
+        .map(
+          (answer, index) =>
+            `<button class="button" onclick="quiz.checkAnswer(${index})">${answer.text}</button> </div>`
+        )
+        .join("")}`;
   }
 
   checkAnswer(answerIndex) {

@@ -111,9 +111,8 @@ class Quiz {
       ].answers
         .map(
           (answer, index) =>
-            `<button class="button" onclick="quiz.checkAnswer(${index})">${answer.text}</button> </div>`
-        )
-        .join("")}`;
+            `<button class="button" onclick="quiz.checkAnswer(${index})">${answer.text}</button></div>`
+        ).join("")}`;
   }
 
   checkAnswer(answerIndex) {

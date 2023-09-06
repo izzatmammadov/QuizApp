@@ -110,8 +110,8 @@ class Quiz {
           this.currentQuestionIndex
         ].answers
           .map(
-            (answer, index) =>
-              `<button class="button" onclick="quiz.checkAnswer(${index})">${answer.text}</button> </div>`
+            (answer) =>
+              `<button class="button">${answer.text}</button> </div>`
           )
           .join("")}`;
   }

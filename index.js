@@ -47,8 +47,8 @@ const quizData = [
   {
     question: "Who discovered gravity?",
     answers: [
-      { text: "Albert Einstein", correct: true },
-      { text: "Isaac Newton", correct: false },
+      { text: "Albert Einstein", correct: false },
+      { text: "Isaac Newton", correct: true },
       { text: "Nikola Tesla", correct: false },
       { text: "Georg Ohm", correct: false },
     ],
